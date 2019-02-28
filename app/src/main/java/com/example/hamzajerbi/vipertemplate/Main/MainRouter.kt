@@ -1,7 +1,5 @@
 package com.example.hamzajerbi.vipertemplate.Main
 
-import com.example.hamzajerbi.vipertemplate.MainActivity
-
 class MainRouter: MainPresenterToRouterInterface {
 
     companion object {

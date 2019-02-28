@@ -1,10 +1,9 @@
-package com.example.hamzajerbi.vipertemplate
+package com.example.hamzajerbi.vipertemplate.Main
 
 import android.content.Context
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import com.example.hamzajerbi.vipertemplate.Main.MainPresenterToViewInterface
-import com.example.hamzajerbi.vipertemplate.Main.MainViewToPresenterInterface
+import com.example.hamzajerbi.vipertemplate.R
 
 class MainActivity : AppCompatActivity(),MainPresenterToViewInterface {
     override val contxt: Context = this

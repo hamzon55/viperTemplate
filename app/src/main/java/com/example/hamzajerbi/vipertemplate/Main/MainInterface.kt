@@ -1,7 +1,6 @@
 package com.example.hamzajerbi.vipertemplate.Main
 
 import android.content.Context
-import com.example.hamzajerbi.vipertemplate.MainActivity
 
 interface MainPresenterToViewInterface {
     val  contxt: Context
