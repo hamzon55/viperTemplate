@@ -1,36 +1,32 @@
 package com.example.hamzajerbi.vipertemplate.Main
 
 import android.content.Context
+import com.example.hamzajerbi.vipertemplate.Main.Adapter.MainAdapterModel
 
 interface MainPresenterToViewInterface {
-    val  contxt: Context
+    val contxt: Context
     var presenter: MainViewToPresenterInterface?
+    fun showService(argument: ArrayList<MainAdapterModel>)
 }
 
 interface MainInteractorToPresenterInterface {
-
-
+    fun serviceFetched(argument: MainEntities)
 }
 
 interface MainPresentorToInteractorInterface {
     var presenter: MainInteractorToPresenterInterface?
-
-
+    fun fetchMain(context: Context)
 }
 
 interface MainViewToPresenterInterface {
     var view: MainPresenterToViewInterface?
     var interector: MainPresentorToInteractorInterface?
     var router: MainPresenterToRouterInterface?
-    fun updateView()
-
-
+    fun requestMain()
 }
 
 interface MainPresenterToRouterInterface {
     companion object {
         fun configure(activity: MainActivity) {}
     }
-
-
 }
