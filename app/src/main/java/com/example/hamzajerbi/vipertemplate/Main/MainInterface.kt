@@ -6,11 +6,11 @@ import com.example.hamzajerbi.vipertemplate.Main.Adapter.MainAdapterModel
 interface MainPresenterToViewInterface {
     val contxt: Context
     var presenter: MainViewToPresenterInterface?
-    fun showService(argument: ArrayList<MainAdapterModel>)
+    fun showMain(argument: ArrayList<MainAdapterModel>)
 }
 
 interface MainInteractorToPresenterInterface {
-    fun serviceFetched(argument: MainEntities)
+    fun mainFetched(argument: MainEntities)
 }
 
 interface MainPresentorToInteractorInterface {

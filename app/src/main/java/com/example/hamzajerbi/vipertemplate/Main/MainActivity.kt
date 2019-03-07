@@ -12,10 +12,8 @@ import com.example.hamzajerbi.vipertemplate.R
 class MainActivity : AppCompatActivity(),MainPresenterToViewInterface {
     override var presenter: MainViewToPresenterInterface? = null
 
-
     override val contxt: Context = this
     private var recycleView: RecyclerView? = null
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         MainRouter.configure(this)
@@ -27,7 +25,7 @@ class MainActivity : AppCompatActivity(),MainPresenterToViewInterface {
         presenter?.requestMain()
 
     }
-    override fun showService(argument: ArrayList<MainAdapterModel>) {
+    override fun showMain(argument: ArrayList<MainAdapterModel>) {
         recycleView?.adapter = MainAdapter(argument)
     }
 }
